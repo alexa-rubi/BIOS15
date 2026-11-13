@@ -1,4 +1,4 @@
-dat = read.csv("~/Bioinformatics/BIOS15/BIOS15/butterflies.csv")
+dat = read.csv("butterflies.csv")
 
 # Calculate the mean adult weight time for each combination
 means = tapply(dat$AdultWeight, 
