@@ -88,6 +88,7 @@ legend("topleft", lty=1, lwd=2, col=c(1, "blue3", "firebrick"), bty="n",
                 "MAP = Mean - SD"))
 
 # Calculate predicted abundance at minimum and maximum Tseason
+coefs = summary(m)$coefficients
 # Minimum Tseason
 exp(coefs[1,1] +
       coefs[3,1] * min(dat$mcTseason) +
